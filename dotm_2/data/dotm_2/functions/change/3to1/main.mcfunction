@@ -1,0 +1,3 @@
+scoreboard players set #money register 1000000
+execute if score @s money < #money register run tellraw @s [{"text":"銀行餘額不足 !","color":"red"},{"text":" ( 需要 $","color":"gray"},{"score":{"name":"#money","objective":"register"}},{"text":" )","color":"gray"}]
+execute if data block -189 177 208 Items[{Slot:3b}].tag.Parameter[{name:"skill"}] if data block -189 177 208 Items[{Slot:4b}].tag.Parameter[{name:"skill"}] if data block -189 177 208 Items[{Slot:5b}].tag.Parameter[{name:"skill"}] run function dotm_2:change/3to1/detect_skill

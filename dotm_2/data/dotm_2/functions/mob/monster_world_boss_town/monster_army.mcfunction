@@ -1,0 +1,3 @@
+function dotm_2:main/other/random
+execute if score #system random matches ..80 run summon zombie ~ ~3 ~ {AbsorptionAmount:16000f,CustomNameVisible:1,CustomName:'[{"text":"","italic":false},{"text":"魔王兵","color":"green","bold":true}]',Attributes:[{Name:generic.max_health,Base:16000f},{Name:generic.attack_damage,Base:12},{Name:generic.movement_speed,Base:0.32f},{Name:generic.follow_range,Base:16},{Name:generic.knockback_resistance,Base:2.0f},{Name:generic.armor,Base:0},{Name:generic.armor_toughness,Base:0}],Tags:["monster_army"]}
+fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:dead_tube_coral_block replace minecraft:redstone_block

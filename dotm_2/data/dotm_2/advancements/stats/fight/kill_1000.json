@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/fight/kill_100",
+	"display" :
+		{
+			"title" : "§e§L大開殺戒",
+			"description" : "擊殺 1000 個魔族",
+			"frame" : "goal",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:diamond_sword"
+				}
+		},
+	"criteria" :
+		{
+			"kill_1000" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/kill_1000"
+		}
+}

@@ -1,0 +1,10 @@
+execute if entity @s[tag=teleport_lvl_1] run title @s actionbar [{"text":"瞬步","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"回復 8 公尺內所有友軍 4 點血量","bold":true}]}}},{"text":"(Lv:1)","color":"aqua","bold":false},{"text":" 的冷卻時間尚未結束","bold":true,"color":"gray"}]
+execute if entity @s[tag=teleport_lvl_2] run title @s actionbar [{"text":"瞬步","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"回復 8 公尺內所有友軍 8 點血量","bold":true}]}}},{"text":"(Lv:2)","color":"aqua","bold":false},{"text":" 的冷卻時間尚未結束","bold":true,"color":"gray"}]
+execute if entity @s[tag=teleport_lvl_3] run title @s actionbar [{"text":"瞬步","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"回復 8 公尺內所有友軍 8 點血量","bold":true}]}}},{"text":"(Lv:3)","color":"aqua","bold":false},{"text":" 的冷卻時間尚未結束","bold":true,"color":"gray"}]
+execute if entity @s[tag=teleport_lvl_4] run title @s actionbar [{"text":"瞬步","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"回復 8 公尺內所有友軍 8 點血量","bold":true}]}}},{"text":"(Lv:4)","color":"aqua","bold":false},{"text":" 的冷卻時間尚未結束","bold":true,"color":"gray"}]
+execute if entity @s[tag=teleport_lvl_5] run title @s actionbar [{"text":"瞬步","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"回復 8 公尺內所有友軍 8 點血量","bold":true}]}}},{"text":"(Lv:5)","color":"aqua","bold":false},{"text":" 的冷卻時間尚未結束","bold":true,"color":"gray"}]
+execute if entity @s[tag=teleport_lvl_6] run title @s actionbar [{"text":"瞬步","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"回復 8 公尺內所有友軍 8 點血量","bold":true}]}}},{"text":"(Lv:max)","color":"aqua","bold":false},{"text":" 的冷卻時間尚未結束","bold":true,"color":"gray"}]
+tag @s add give_teleport
+schedule function dotm_2:magic/give_teleport 1t
+execute at @s run playsound minecraft:entity.arrow.hit_player ambient @s ~ ~ ~ 1 0
+scoreboard players set @s teleport 0

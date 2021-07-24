@@ -1,0 +1,3 @@
+function dotm_2:main/other/random
+execute if score #system random matches ..50 run summon wither_skeleton ~ ~3 ~ {AbsorptionAmount:20000f,CustomNameVisible:1,CustomName:'[{"text":"","italic":false},{"text":"暗襲狂魔","color":"yellow","bold":true}]',Attributes:[{Name:generic.max_health,Base:20000f},{Name:generic.movement_speed,Base:0.24f},{Name:generic.follow_range,Base:16},{Name:generic.knockback_resistance,Base:2.0f},{Name:generic.armor,Base:0},{Name:generic.armor_toughness,Base:0}],HandItems:[{Count:1,id:"bow",tag:{Enchantments:[{"id":"minecraft:power","lvl":32},{"id":"minecraft:punch","lvl":10}]}},{}],HandDropChances:[0f,0f],Tags:["monster_dark"]}
+fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:dead_tube_coral_block replace minecraft:redstone_block

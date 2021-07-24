@@ -1,0 +1,262 @@
+{
+	"type": "minecraft:entity",
+	"pools":
+		[
+			{
+				"rolls": 1,
+				"entries":
+					[
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:leather_boots",
+							"functions":
+								[
+									{
+										"function": "minecraft:copy_nbt",
+										"source": "this",
+										"ops":
+											[
+												{
+													"source": "ArmorItems[0].tag.HideFlags",
+													"target": "HideFlags",
+													"op": "replace"
+												},
+												{
+													"source": "ArmorItems[0].tag.Unbreakable",
+													"target": "Unbreakable",
+													"op": "replace"
+												},
+												{
+													"source": "ArmorItems[0].tag.CustomModelData",
+													"target": "CustomModelData",
+													"op": "replace"
+												},
+												{
+													"source": "ArmorItems[0].tag.display",
+													"target": "display",
+													"op": "replace"
+												},
+												{
+													"source": "ArmorItems[0].tag.AttributeModifiers",
+													"target": "AttributeModifiers",
+													"op": "replace"
+												},
+												{
+													"source": "ArmorItems[0].tag.Enchantments",
+													"target": "Enchantments",
+													"op": "replace"
+												},
+												{
+													"source": "ArmorItems[0].tag.Parameter",
+													"target": "Parameter",
+													"op": "replace"
+												}
+											]
+									}
+								],
+							"conditions":
+								[
+									{
+										"condition": "minecraft:entity_properties",
+										"predicate":
+											{
+												"nbt":"{Tags:[\"value_calculate_boots\"]}"
+											},
+										"entity": "this"
+									}
+								]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:carrot_on_a_stick",
+							"functions":
+								[
+									{
+										"function": "minecraft:copy_nbt",
+										"source": "this",
+										"ops":
+											[
+												{
+													"source": "HandItems[0].tag.HideFlags",
+													"target": "HideFlags",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.Unbreakable",
+													"target": "Unbreakable",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.CustomModelData",
+													"target": "CustomModelData",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.display",
+													"target": "display",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.AttributeModifiers",
+													"target": "AttributeModifiers",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.Enchantments",
+													"target": "Enchantments",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.Parameter",
+													"target": "Parameter",
+													"op": "replace"
+												}
+											]
+									}
+								],
+							"conditions":
+								[
+									{
+										"condition": "minecraft:entity_properties",
+										"predicate":
+											{
+												"nbt":"{Tags:[\"value_calculate_weapon\"]}"
+											},
+										"entity": "this"
+									}
+								]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:trident",
+							"functions":
+								[
+									{
+										"function": "minecraft:copy_nbt",
+										"source": "this",
+										"ops":
+											[
+												{
+													"source": "HandItems[0].tag.HideFlags",
+													"target": "HideFlags",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.Unbreakable",
+													"target": "Unbreakable",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.CustomModelData",
+													"target": "CustomModelData",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.display",
+													"target": "display",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.AttributeModifiers",
+													"target": "AttributeModifiers",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.Enchantments",
+													"target": "Enchantments",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.Parameter",
+													"target": "Parameter",
+													"op": "replace"
+												}
+											]
+									}
+								],
+							"conditions":
+								[
+									{
+										"condition": "minecraft:entity_properties",
+										"predicate":
+											{
+												"nbt":"{Tags:[\"value_calculate_trident\"]}"
+											},
+										"entity": "this"
+									}
+								]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:crossbow",
+							"functions":
+								[
+									{
+										"function": "minecraft:copy_nbt",
+										"source": "this",
+										"ops":
+											[
+												{
+													"source": "HandItems[0].tag.HideFlags",
+													"target": "HideFlags",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.Unbreakable",
+													"target": "Unbreakable",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.CustomModelData",
+													"target": "CustomModelData",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.display",
+													"target": "display",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.AttributeModifiers",
+													"target": "AttributeModifiers",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.Enchantments",
+													"target": "Enchantments",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.Parameter",
+													"target": "Parameter",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.Charged",
+													"target": "Charged",
+													"op": "replace"
+												},
+												{
+													"source": "HandItems[0].tag.ChargedProjectiles",
+													"target": "ChargedProjectiles",
+													"op": "replace"
+												}
+											]
+									}
+								],
+							"conditions":
+								[
+									{
+										"condition": "minecraft:entity_properties",
+										"predicate":
+											{
+												"nbt":"{Tags:[\"value_calculate_crossbow\"]}"
+											},
+										"entity": "this"
+									}
+								]
+						}
+					]
+			}
+		]
+}

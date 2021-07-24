@@ -1,0 +1,31 @@
+{
+	"display":
+		{
+			"icon":{"item":"minecraft:experience_bottle"},
+			"title":"boss_end",
+			"description":"",
+			"frame":"task",
+			"show_toast":false,
+			"announce_to_chat":false,
+			"hidden":true,
+			"background":"minecraft:textures/block/stone.png"
+		},
+	"criteria":
+		{
+            "kill":
+				{
+					"trigger":"minecraft:player_killed_entity",
+                    "conditions":
+						{
+                            "entity":
+								{
+									"nbt":"{Tags:[\"boss_end\"]}"
+								}
+						}
+				}
+		},
+    "rewards":
+		{
+			"function":"dotm_2:drop/monster_boss/boss_end"
+		}
+}

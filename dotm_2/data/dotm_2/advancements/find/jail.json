@@ -1,0 +1,48 @@
+{
+	"parent" : "dotm_2:find/fishing",
+	"display" :
+		{
+			"title" : "§e§L入獄服刑",
+			"description" : "第一次被待補",
+			"frame" : "goal",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:iron_bars"
+				}
+		},
+	"criteria" :
+		{
+			"jail" :
+				{
+					"trigger" : "minecraft:location",
+					"conditions" :
+						{
+							"position" :
+								{
+									"x" :
+										{
+											"min" : -203.0,
+											"max" : -185.0
+										},
+									"y" :
+										{
+											"min" : 208.0,
+											"max" : 209.0
+										},
+									"z" :
+										{
+											"min" : 141.0,
+											"max" : 143.0
+										}
+								}
+						}
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/jail"
+		}
+}

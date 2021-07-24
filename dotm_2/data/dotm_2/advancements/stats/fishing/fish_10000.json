@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/fishing/fish_1000",
+	"display" :
+		{
+			"title" : "§5§L釣魚大師",
+			"description" : "釣魚 10000 次",
+			"frame" : "challenge",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:water_bucket"
+				}
+		},
+	"criteria" :
+		{
+			"fish_10000" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/fish_10000"
+		}
+}

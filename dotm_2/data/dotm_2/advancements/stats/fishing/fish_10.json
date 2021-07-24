@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/fishing/fish_1",
+	"display" :
+		{
+			"title" : "§a§L恬靜時光",
+			"description" : "釣魚 10 次",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:water_bucket"
+				}
+		},
+	"criteria" :
+		{
+			"fish_10" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/fish_10"
+		}
+}

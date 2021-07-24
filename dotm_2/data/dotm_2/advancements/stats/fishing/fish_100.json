@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/fishing/fish_10",
+	"display" :
+		{
+			"title" : "§e§L收穫滿滿",
+			"description" : "釣魚 100 次",
+			"frame" : "goal",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:water_bucket"
+				}
+		},
+	"criteria" :
+		{
+			"fish_100" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/fish_100"
+		}
+}

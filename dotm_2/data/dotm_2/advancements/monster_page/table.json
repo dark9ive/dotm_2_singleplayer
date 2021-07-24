@@ -1,0 +1,23 @@
+{
+	"display" :
+		{
+			"title" : "§d§L魔族圖鑑",
+			"description" : "",
+			"frame" : "task",
+			"show_toast" : false,
+			"announce_to_chat" : false,
+			"hidden" : false,
+			"background" : "minecraft:textures/block/purple_wool.png",
+			"icon" :
+				{
+					"item" : "minecraft:written_book"
+				}
+		},
+	"criteria" :
+		{
+			"monster_page" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		}
+}

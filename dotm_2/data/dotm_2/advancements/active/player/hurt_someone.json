@@ -1,0 +1,22 @@
+{
+ "display":{
+    "icon":{
+	         "item":"minecraft:apple"
+             },
+	"title":"你打到人了~",
+    "description":"",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":false,
+    "hidden":true,
+    "background":"minecraft:textures/block/stone.png"
+ },
+     "criteria": {
+            "kill": {
+            "trigger":"minecraft:player_hurt_entity"
+            }
+    },
+    "rewards": {
+             "function":"dotm_2:main/other/hurt_someone"
+    }
+}

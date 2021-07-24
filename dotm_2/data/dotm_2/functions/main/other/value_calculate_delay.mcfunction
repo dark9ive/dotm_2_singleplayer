@@ -1,0 +1,1 @@
+execute as @a[tag=value_update] run function dotm_2:main/other/value_calculate

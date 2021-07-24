@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:main/select_job",
+	"display" :
+		{
+			"title" : "§a§L認識環境",
+			"description" : "移動距離達到 100000",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:leather_boots"
+				}
+		},
+	"criteria" :
+		{
+			"save" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/move_100000"
+		}
+}

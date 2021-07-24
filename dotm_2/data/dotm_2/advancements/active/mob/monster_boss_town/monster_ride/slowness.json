@@ -1,0 +1,29 @@
+{
+ "display":{
+    "icon":{
+	         "item":"minecraft:apple"
+             },
+	"title":"你被緩了~",
+    "description":"",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":false,
+    "hidden":true,
+    "background":"minecraft:textures/block/stone.png"
+ },
+     "criteria": {
+            "kill": {
+            "trigger":"minecraft:entity_hurt_player",
+                      "conditions": {
+                            "damage": {
+							    "source_entity":{
+									"nbt":"{Tags:[\"monster_ride\"]}"
+									}
+                            }
+                    }
+            }
+    },
+    "rewards": {
+             "function":"dotm_2:main/monster_world_boss_town/skill/monster_ride/slowness"
+    }
+}

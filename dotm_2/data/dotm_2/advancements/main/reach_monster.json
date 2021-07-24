@@ -1,0 +1,35 @@
+{
+	"parent" : "dotm_2:main/clear_boss",
+	"display" :
+		{
+			"title" : "§a§L魔界",
+			"description" : "到達魔界",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:netherrack"
+				}
+		},
+	"criteria":
+		{
+			"reach_monster":
+				{
+					"trigger" : "minecraft:changed_dimension",
+					"conditions" :
+						{
+							"position" :
+								{
+									"from": "minecraft:overworld",
+									"to": "minecraft:the_nether"
+								}
+						}
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/reach_monster"
+		}
+}

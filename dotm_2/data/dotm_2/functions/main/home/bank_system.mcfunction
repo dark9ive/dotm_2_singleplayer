@@ -1,0 +1,12 @@
+execute as @a[x=-132.5,y=190,z=120.5,distance=..0.4] run function dotm_2:money/save_10000_all
+execute as @a[x=-130.5,y=190,z=120.5,distance=..0.4] run function dotm_2:money/save_1000_all
+execute as @a[x=-128.5,y=190,z=120.5,distance=..0.4] run function dotm_2:money/save_100_all
+execute as @a[x=-126.5,y=190,z=120.5,distance=..0.4] run function dotm_2:money/save_10_all
+execute as @a[x=-119.5,y=190,z=120.5,distance=..0.4,scores={money=..639}] run function dotm_2:money/give_10
+execute as @a[x=-117.5,y=190,z=120.5,distance=..0.4,scores={money=..6399}] run function dotm_2:money/give_100
+execute as @a[x=-115.5,y=190,z=120.5,distance=..0.4,scores={money=..63999}] run function dotm_2:money/give_1000
+execute as @a[x=-113.5,y=190,z=120.5,distance=..0.4,scores={money=..639999}] run function dotm_2:money/give_10000
+execute as @a[x=-119.5,y=190,z=120.5,distance=..0.4,scores={money=640..}] run function dotm_2:money/give_640
+execute as @a[x=-117.5,y=190,z=120.5,distance=..0.4,scores={money=6400..}] run function dotm_2:money/give_6400
+execute as @a[x=-115.5,y=190,z=120.5,distance=..0.4,scores={money=64000..}] run function dotm_2:money/give_64000
+execute as @a[x=-113.5,y=190,z=120.5,distance=..0.4,scores={money=640000..}] run function dotm_2:money/give_640000

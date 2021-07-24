@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:block",
+	"pools":
+		[
+			{
+				"rolls": 1,
+				"entries":
+					[
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:coal_block",
+							"functions":
+								[
+									{
+										"function": "minecraft:set_nbt",
+										"tag": "{HideFlags:63,display:{Name:\"[{\\\"text\\\":\\\"具有研究價值的木炭\\\",\\\"color\\\":\\\"dark_gray\\\",\\\"bold\\\":true,\\\"italic\\\":false}]\",Lore:[\"[{\\\"text\\\":\\\"★\\\",\\\"color\\\":\\\"yellow\\\",\\\"bold\\\":false,\\\"italic\\\":false}]\",\"[{\\\"text\\\":\\\"\\\"}]\",\"[{\\\"text\\\":\\\"被燒成了炭的神木村木材\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}]\",\"[{\\\"text\\\":\\\"\\\"}]\",\"[{\\\"text\\\":\\\"\\\"}]\",\"[{\\\"text\\\":\\\"取得方式 : \\\",\\\"color\\\":\\\"red\\\",\\\"bold\\\":true,\\\"italic\\\":false},{\\\"text\\\":\\\"神木村挖掘\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}]\",\"[{\\\"text\\\":\\\"適用職業 : \\\",\\\"color\\\":\\\"red\\\",\\\"bold\\\":true,\\\"italic\\\":false},{\\\"text\\\":\\\"所有職業\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}]\"]}}"
+									}
+								]
+						}
+					],
+				"conditions":
+					[
+						{
+							"condition": "minecraft:survives_explosion"
+						}
+					]
+			}
+		]
+}

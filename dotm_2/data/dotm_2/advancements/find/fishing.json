@@ -1,0 +1,48 @@
+{
+	"parent" : "dotm_2:find/fast_wheat",
+	"display" :
+		{
+			"title" : "§e§L是老衲",
+			"description" : "悠閒釣魚時光",
+			"frame" : "goal",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:fishing_rod"
+				}
+		},
+	"criteria" :
+		{
+			"fast_wheat" :
+				{
+					"trigger" : "minecraft:location",
+					"conditions" :
+						{
+							"position" :
+								{
+									"x" :
+										{
+											"min" : 19.0,
+											"max" : 27.0
+										},
+									"y" :
+										{
+											"min" : 77.0,
+											"max" : 80.0
+										},
+									"z" :
+										{
+											"min" : 188.0,
+											"max" : 197.0
+										}
+								}
+						}
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/fishing"
+		}
+}

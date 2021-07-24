@@ -1,0 +1,48 @@
+{
+	"parent" : "dotm_2:main/clear_desert",
+	"display" :
+		{
+			"title" : "§a§L神木村",
+			"description" : "到達神木村",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:oak_sapling"
+				}
+		},
+	"criteria":
+		{
+			"reach_tree":
+				{
+					"trigger" : "minecraft:location",
+					"conditions" :
+						{
+							"position" :
+								{
+									"x" :
+										{
+											"min" : 1034.0,
+											"max" : 1041.0
+										},
+									"y" :
+										{
+											"min" : 31.0,
+											"max" : 38.0
+										},
+									"z" :
+										{
+											"min" : 1340.0,
+											"max" : 1344.0
+										}
+								}
+						}
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/reach_tree"
+		}
+}

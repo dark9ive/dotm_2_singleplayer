@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:copy_name",
+              "source": "block_entity"
+            },
+            {
+			  "function": "minecraft:set_nbt",
+			  "tag": "{CanPlaceOn:[\"#dotm_2:travel_box\"],HideFlags:16,display:{Name:'[{\"text\":\"\"},{\"text\":\"喜氣紅 - 旅行箱\",\"color\":\"light_purple\",\"bold\":\"true\"}]',Lore:[\"\\\"\\\"\",\"\\\"§7可放置在基岩上\\\"\",\"\\\"§7擁有超大容納空間\\\"\",\"\\\"§7旅行箱是您外出探險時\\\"\",\"\\\"§7最實用的好幫手\\\"\",\"\\\"\\\"\",\"\\\"\\\"\",\"\\\"§c§L取得方式 : §7旅行箱商人購買\\\"\"]}}"
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": "block_entity",
+              "ops": [
+                {
+                  "source": "Lock",
+                  "target": "BlockEntityTag.Lock",
+                  "op": "replace"
+                },
+                {
+                  "source": "LootTable",
+                  "target": "BlockEntityTag.LootTable",
+                  "op": "replace"
+                },
+                {
+                  "source": "LootTableSeed",
+                  "target": "BlockEntityTag.LootTableSeed",
+                  "op": "replace"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_contents",
+              "entries": [
+                {
+                  "type": "minecraft:dynamic",
+                  "name": "minecraft:contents"
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:red_shulker_box"
+        }
+      ]
+    }
+  ]
+}

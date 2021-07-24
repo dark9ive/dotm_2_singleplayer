@@ -1,0 +1,1 @@
+execute unless entity @p[tag=skill_12_death] run kill @e[type=item,nbt={Item:{tag:{Tags:["skill_12"]}}}]

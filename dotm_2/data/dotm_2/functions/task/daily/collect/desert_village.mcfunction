@@ -1,0 +1,17 @@
+
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=0,task_pyramid=2000..}] run tellraw @s [{"text":"村民","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"你今天已經完成這個任務了，明天再來吧。\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=0,task_pyramid=..1999},tag=task_pyramid] run tellraw @s [{"text":"村民","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"魔氣的收集還不夠  麻煩再多一點!\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=..5,task_pyramid=..1999},tag=!task_pyramid] run scoreboard players add @s tmp_task 1
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=1}] run tellraw @s [{"text":"村民","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"你好啊，我是位驅魔學徒。\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=2}] run tellraw @s [{"text":"村民","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"這金字塔裡面某個地方有大量的魔氣存在,因此我被派來清理。\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=3}] run tellraw @s [{"text":"村民","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"但是魔氣比我想像中還要大,且還有兇惡的魔物。\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=4}] run tellraw @s [{"text":"村民","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"你能夠幫我在下面收集一些魔氣嗎?\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=5}] run tellraw @s [{"text":"村民","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"只要手上拿者魔氣並回來找我,我就會處理這些魔氣\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=6}] run scoreboard players enable @s tmp_task
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=6}] run tellraw @s [{"text":"                ","bold":false,"color":"gray"},{"text":"接受","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger tmp_task set 50"}},{"text":"                ","bold":false,"color":"gray"},{"text":"拒絕","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/trigger tmp_task set 49"}},{"text":"\n\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=49}] run tellraw @s [{"text":"已拒絕任務。","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=49}] run scoreboard players set @s tmp_task 0
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=50}] run tellraw @s [{"text":"已接受任務","bold":false,"color":"gray"},{"text":"【每日】淨化金字塔內魔氣","bold":true,"color":"dark_purple"},{"text":"。(帶回 2000 點魔氣點數)","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=50}] run tag @s add task_pyramid
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[scores={tmp_task=50}] run scoreboard players set @s tmp_task 0
+execute if entity @e[tag=npc_pyramid,distance=..2] if entity @s[tag=task_pyramid] run function dotm_2:task/daily/collect/desert_village/pyramid

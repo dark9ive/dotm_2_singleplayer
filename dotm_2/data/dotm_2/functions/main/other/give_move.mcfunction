@@ -1,0 +1,1 @@
+give @s minecraft:paper{display:{Name:"[{\"text\":\"環遊世界證書\",\"color\":\"dark_gray\",\"bold\":true}]",Lore:["\"\"","\"\"","\"\\u00a7c\\u00a7L取得方式 : \\u00a77成就商店兌換\"","\"\\u00a7c\\u00a7L適用職業 : \\u00a77所有職業\""]},HideFlags:3,Enchantments:[{id:"minecraft:thorns",lvl:1}]} 1

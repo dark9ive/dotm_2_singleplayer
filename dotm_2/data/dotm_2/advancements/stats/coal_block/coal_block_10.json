@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/coal_block/coal_block_1",
+	"display" :
+		{
+			"title" : "§a§L研究好幫手",
+			"description" : "挖掘煤炭磚 10 次",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:coal_block"
+				}
+		},
+	"criteria" :
+		{
+			"coal_block_10" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/coal_block_10"
+		}
+}

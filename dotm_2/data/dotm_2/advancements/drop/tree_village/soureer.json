@@ -1,0 +1,31 @@
+{
+	"display":
+		{
+			"icon":{"item":"minecraft:experience_bottle"},
+			"title":"soureer",
+			"description":"",
+			"frame":"task",
+			"show_toast":false,
+			"announce_to_chat":false,
+			"hidden":true,
+			"background":"minecraft:textures/block/stone.png"
+		},
+	"criteria":
+		{
+            "kill":
+				{
+					"trigger":"minecraft:player_killed_entity",
+                    "conditions":
+						{
+                            "entity":
+								{
+									"nbt":"{Tags:[\"soureer\"]}"
+								}
+						}
+				}
+		},
+    "rewards":
+		{
+			"function":"dotm_2:drop/tree_village/soureer"
+		}
+}

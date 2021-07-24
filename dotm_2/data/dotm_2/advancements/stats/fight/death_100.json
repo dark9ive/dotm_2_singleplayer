@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/fight/death_10",
+	"display" :
+		{
+			"title" : "§e§L與死相伴",
+			"description" : "死亡 100 次",
+			"frame" : "goal",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:skeleton_skull"
+				}
+		},
+	"criteria" :
+		{
+			"death_100" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/death_100"
+		}
+}

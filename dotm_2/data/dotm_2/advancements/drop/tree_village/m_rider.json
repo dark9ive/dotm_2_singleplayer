@@ -1,0 +1,31 @@
+{
+	"display":
+		{
+			"icon":{"item":"minecraft:experience_bottle"},
+			"title":"m_rider",
+			"description":"",
+			"frame":"task",
+			"show_toast":false,
+			"announce_to_chat":false,
+			"hidden":true,
+			"background":"minecraft:textures/block/stone.png"
+		},
+	"criteria":
+		{
+            "kill":
+				{
+					"trigger":"minecraft:player_killed_entity",
+                    "conditions":
+						{
+                            "entity":
+								{
+									"nbt":"{Tags:[\"m_rider\"]}"
+								}
+						}
+				}
+		},
+    "rewards":
+		{
+			"function":"dotm_2:drop/tree_village/m_rider"
+		}
+}

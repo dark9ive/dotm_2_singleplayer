@@ -1,0 +1,28 @@
+{
+	"parent" : "dotm_2:stats/money/save_1000000",
+	"display" :
+		{
+			"title" : "§5§L千萬富翁",
+			"description" : "存款達到 10,000,000 元",
+			"frame" : "challenge",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:phantom_membrane",
+					"nbt" : "{CustomModelData:43}"
+				}
+		},
+	"criteria" :
+		{
+			"save" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/save_10000000"
+		}
+}

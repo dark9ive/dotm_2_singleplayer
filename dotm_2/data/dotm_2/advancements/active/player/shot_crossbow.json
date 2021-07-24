@@ -1,0 +1,22 @@
+{
+ "display":{
+    "icon":{
+	         "item":"minecraft:apple"
+             },
+	"title":"你用了弩~",
+    "description":"",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":false,
+    "hidden":true,
+    "background":"minecraft:textures/block/stone.png"
+ },
+     "criteria": {
+            "kill": {
+            "trigger":"minecraft:shot_crossbow"
+            }
+    },
+    "rewards": {
+             "function":"dotm_2:main/other/shot_crossbow"
+    }
+}

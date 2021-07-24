@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:main/select_job",
+	"display" :
+		{
+			"title" : "§a§L研究小幫手",
+			"description" : "挖掘煤炭磚 1 次",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:coal_block"
+				}
+		},
+	"criteria" :
+		{
+			"coal_block_1" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/coal_block_1"
+		}
+}

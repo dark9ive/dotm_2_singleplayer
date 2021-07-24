@@ -1,0 +1,48 @@
+{
+	"parent" : "dotm_2:main/clear_sea",
+	"display" :
+		{
+			"title" : "§a§L魔王城",
+			"description" : "到達魔王城",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:stone_bricks"
+				}
+		},
+	"criteria":
+		{
+			"reach_boss":
+				{
+					"trigger" : "minecraft:location",
+					"conditions" :
+						{
+							"position" :
+								{
+									"x" :
+										{
+											"min" : 1046.0,
+											"max" : 1050.0
+										},
+									"y" :
+										{
+											"min" : 70.0,
+											"max" : 80.0
+										},
+									"z" :
+										{
+											"min" : 2480.0,
+											"max" : 2515.0
+										}
+								}
+						}
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/reach_boss"
+		}
+}

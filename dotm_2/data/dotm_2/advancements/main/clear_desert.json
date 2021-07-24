@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:main/reach_desert",
+	"display" :
+		{
+			"title" : "§5§L火之靈氣",
+			"description" : "攻略烈沙村Boss",
+			"frame" : "challenge",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:sand"
+				}
+		},
+	"criteria" :
+		{
+			"clear_desert" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/clear_desert"
+		}
+}

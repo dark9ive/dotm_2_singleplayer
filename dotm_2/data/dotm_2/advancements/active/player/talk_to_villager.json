@@ -1,0 +1,29 @@
+{
+	"display":
+		{
+			"icon":{"item":"minecraft:apple"},
+			"title":"你和村民對話~",
+			"description":"",
+			"frame":"task",
+			"show_toast":false,
+			"announce_to_chat":false,
+			"hidden":true,
+			"background":"minecraft:textures/block/stone.png"
+		},
+    "criteria":
+		{
+            "kill":
+				{
+					"trigger":"minecraft:player_interacted_with_entity",
+					"conditions":
+						{
+							"entity":
+								{
+									"type": "villager",
+									"nbt":"{Tags:[\"npc\"]}"
+								}
+						}
+				}
+		},
+    "rewards":{"function":"dotm_2:main/other/talk_to_villager"}
+}

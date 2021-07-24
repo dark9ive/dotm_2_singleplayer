@@ -1,0 +1,3 @@
+function dotm_2:main/other/random
+execute if score #system random matches ..30 run summon minecraft:vex ~ ~3 ~ {ActiveEffects:[{Id:14,Amplifier:1,Duration:999999}],Attributes:[{Name:generic.follow_range,Base:16},{Name:generic.knockback_resistance,Base:2.0f}],Passengers:[{id:"creeper",CustomName:'[{"text":"飛行炸彈怪","color":"green","bold":true}]',CustomNameVisible:1,Fuse:1,ExplosionRadius:16,Health:1f,AbsorptionAmount:3000f,Attributes:[{Name:generic.max_health,Base:3000f},{Name:generic.follow_range,Base:16},{Name:generic.knockback_resistance,Base:2.0f},{Name:generic.armor,Base:30},{Name:generic.armor_toughness,Base:20}],Tags:["fly_bomb"]}]}
+fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:dead_tube_coral_block replace minecraft:redstone_block

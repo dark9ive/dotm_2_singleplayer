@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/move/move_1000000",
+	"display" :
+		{
+			"title" : "§e§L環遊世界",
+			"description" : "移動距離達到 10000000",
+			"frame" : "goal",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:leather_boots"
+				}
+		},
+	"criteria" :
+		{
+			"save" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/move_10000000"
+		}
+}

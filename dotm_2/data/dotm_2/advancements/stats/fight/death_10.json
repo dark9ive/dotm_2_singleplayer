@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/fight/death_1",
+	"display" :
+		{
+			"title" : "§a§L好戰者",
+			"description" : "死亡 10 次",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:skeleton_skull"
+				}
+		},
+	"criteria" :
+		{
+			"death_10" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/death_10"
+		}
+}

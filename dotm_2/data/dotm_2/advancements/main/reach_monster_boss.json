@@ -1,0 +1,49 @@
+{
+	"parent" : "dotm_2:main/reach_monster",
+	"display" :
+		{
+			"title" : "§a§L魔界魔王城",
+			"description" : "到達魔界魔王城",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:netherrack"
+				}
+		},
+	"criteria":
+		{
+			"reach_monster_boss":
+				{
+					"trigger" : "minecraft:location",
+					"conditions" :
+						{
+							"dimension": "minecraft:the_nether",
+							"position" :
+								{
+									"x" :
+										{
+											"min" : -1033.0,
+											"max" : -965.0
+										},
+									"y" :
+										{
+											"min" : 70.0,
+											"max" : 140.0
+										},
+									"z" :
+										{
+											"min" : -35.0,
+											"max" : 33.0
+										}
+								}
+						}
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/reach_monster_boss"
+		}
+}
