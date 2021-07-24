@@ -1,0 +1,21 @@
+
+execute if entity @p[x=-128,y=177,z=254,distance=..2,tag=house_001] run setblock -128 177 250 minecraft:air
+execute if entity @p[x=-128,y=177,z=254,distance=..2,tag=house_001] run setblock -128 177 257 minecraft:air
+execute unless entity @p[x=-128,y=177,z=254,distance=..2,tag=house_001] run setblock -128 177 250 minecraft:redstone_torch
+execute unless entity @p[x=-128,y=177,z=254,distance=..2,tag=house_001] run setblock -128 177 257 minecraft:redstone_torch
+execute if entity @p[x=-122,y=182,z=252,distance=..2,tag=house_002] run setblock -126 183 252 minecraft:air
+execute if entity @p[x=-122,y=182,z=252,distance=..2,tag=house_002] run setblock -119 183 252 minecraft:air
+execute unless entity @p[x=-122,y=182,z=252,distance=..2,tag=house_002] run setblock -126 183 252 minecraft:redstone_torch
+execute unless entity @p[x=-122,y=182,z=252,distance=..2,tag=house_002] run setblock -119 183 252 minecraft:redstone_torch
+execute if entity @p[x=-111,y=172,z=257,distance=..2,tag=house_003] run setblock -115 173 257 minecraft:air
+execute if entity @p[x=-111,y=172,z=257,distance=..2,tag=house_003] run setblock -108 173 257 minecraft:air
+execute unless entity @p[x=-111,y=172,z=257,distance=..2,tag=house_003] run setblock -115 173 257 minecraft:redstone_torch
+execute unless entity @p[x=-111,y=172,z=257,distance=..2,tag=house_003] run setblock -108 173 257 minecraft:redstone_torch
+execute if entity @p[x=-104,y=160,z=243,distance=..2,tag=house_004] run setblock -104 161 246 minecraft:air
+execute if entity @p[x=-104,y=160,z=243,distance=..2,tag=house_004] run setblock -105 161 240 minecraft:air
+execute unless entity @p[x=-104,y=160,z=243,distance=..2,tag=house_004] run setblock -104 161 246 minecraft:redstone_torch
+execute unless entity @p[x=-104,y=160,z=243,distance=..2,tag=house_004] run setblock -105 161 240 minecraft:redstone_torch
+execute if entity @p[x=-104,y=148,z=256,distance=..2,tag=house_005] run setblock -105 148 253 minecraft:air
+execute if entity @p[x=-104,y=148,z=256,distance=..2,tag=house_005] run setblock -105 148 258 minecraft:air
+execute unless entity @p[x=-104,y=148,z=256,distance=..2,tag=house_005] run setblock -105 148 253 minecraft:redstone_torch
+execute unless entity @p[x=-104,y=148,z=256,distance=..2,tag=house_005] run setblock -105 148 258 minecraft:redstone_torch

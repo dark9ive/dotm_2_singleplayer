@@ -1,0 +1,50 @@
+
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 run tellraw @a[tag=boss_fight_6] [{"text":"海底聚能者","color":"yellow","bold":true},{"text":"吸收了"},{"text":"無敵煙霧彈","color":"red","bold":true},{"text":"的能量，供給了同伴更強大的能力。"}]
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 1 run scoreboard players add #boss_6 hp 3000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 1 run scoreboard players add #undersea_guard hp 500
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 1 run scoreboard players add #undersea_assassin hp 600
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 1 run scoreboard players add #undersea_gather hp 1000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 1 run scoreboard players add #undersea_impulse hp 1200
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 1 run scoreboard players add #undersea_mage hp 1600
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 1 run scoreboard players add #undersea_boom hp 1800
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 1 run scoreboard players add #undersea_leader hp 2000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 2 run scoreboard players add #boss_6 hp 15000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 2 run scoreboard players add #undersea_guard hp 2500
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 2 run scoreboard players add #undersea_assassin hp 3000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 2 run scoreboard players add #undersea_gather hp 5000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 2 run scoreboard players add #undersea_impulse hp 6000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 2 run scoreboard players add #undersea_mage hp 8000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 2 run scoreboard players add #undersea_boom hp 9000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 2 run scoreboard players add #undersea_leader hp 10000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 3 run scoreboard players add #boss_6 hp 75000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 3 run scoreboard players add #undersea_guard hp 12500
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 3 run scoreboard players add #undersea_assassin hp 15000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 3 run scoreboard players add #undersea_gather hp 25000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 3 run scoreboard players add #undersea_impulse hp 30000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 3 run scoreboard players add #undersea_mage hp 40000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 3 run scoreboard players add #undersea_boom hp 45000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 3 run scoreboard players add #undersea_leader hp 50000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 4 run scoreboard players add #boss_6 hp 300000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 4 run scoreboard players add #undersea_guard hp 50000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 4 run scoreboard players add #undersea_assassin hp 60000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 4 run scoreboard players add #undersea_gather hp 100000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 4 run scoreboard players add #undersea_impulse hp 150000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 4 run scoreboard players add #undersea_mage hp 200000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 4 run scoreboard players add #undersea_boom hp 240000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 4 run scoreboard players add #undersea_leader hp 250000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 5 run scoreboard players add #boss_6 hp 1500000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 5 run scoreboard players add #undersea_guard hp 250000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 5 run scoreboard players add #undersea_assassin hp 300000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 5 run scoreboard players add #undersea_gather hp 500000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 5 run scoreboard players add #undersea_impulse hp 750000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 5 run scoreboard players add #undersea_mage hp 1000000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 5 run scoreboard players add #undersea_boom hp 1200000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches 60 if score #boss_6 class matches 5 run scoreboard players add #undersea_leader hp 1250000
+execute as @e[tag=undersea_gather] if score @s skill_keep matches ..60 run particle minecraft:dust 1.0 0.0 0.0 1.0 ~1 ~2 ~0 0 1.6 0 0.1 4 force
+execute as @e[tag=undersea_gather] if score @s skill_keep matches ..60 run particle minecraft:dust 1.0 0.0 0.0 1.0 ~0.5 ~2 ~0.866 0 1.6 0 0.1 4 force
+execute as @e[tag=undersea_gather] if score @s skill_keep matches ..60 run particle minecraft:dust 1.0 0.0 0.0 1.0 ~-0.5 ~2 ~0.866 0 1.6 0 0.1 4 force
+execute as @e[tag=undersea_gather] if score @s skill_keep matches ..60 run particle minecraft:dust 1.0 0.0 0.0 1.0 ~-1 ~2 ~0 0 1.6 0 0.1 4 force
+execute as @e[tag=undersea_gather] if score @s skill_keep matches ..60 run particle minecraft:dust 1.0 0.0 0.0 1.0 ~-0.5 ~2 ~-0.866 0 1.6 0 0.1 4 force
+execute as @e[tag=undersea_gather] if score @s skill_keep matches ..60 run particle minecraft:dust 1.0 0.0 0.0 1.0 ~0.5 ~2 ~-0.866 0 1.6 0 0.1 4 force
+scoreboard players remove @e[tag=undersea_gather,scores={skill_keep=1..}] skill_keep 1
+execute if entity @e[tag=undersea_gather,scores={skill_keep=1..}] run schedule function dotm_2:main/sea_town/skill/gather_buff 1t

@@ -1,0 +1,1 @@
+tellraw @s [{"text":"必須是房屋的擁有者才能退房唷 !","bold":true,"color":"red"}]

@@ -1,0 +1,1 @@
+setblock ~ ~1 ~ minecraft:spawner{SpawnData:{id:"armor_stand",Tags:["diamond_ore"],Marker:1b,Invisible:1b},SpawnCount:1b,SpawnRange:3b,MaxNearbyEntities:3b,Delay:100b,MinSpawnDelay:200b,MaxSpawnDelay:200b,RequiredPlayerRange:12b} replace

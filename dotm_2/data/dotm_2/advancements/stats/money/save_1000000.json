@@ -1,0 +1,28 @@
+{
+	"parent" : "dotm_2:stats/money/save_100000",
+	"display" :
+		{
+			"title" : "§e§L第一桶金",
+			"description" : "存款達到 1,000,000 元",
+			"frame" : "goal",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:phantom_membrane",
+					"nbt" : "{CustomModelData:42}"
+				}
+		},
+	"criteria" :
+		{
+			"save" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/save_1000000"
+		}
+}

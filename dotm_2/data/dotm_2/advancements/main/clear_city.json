@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:main/reach_city",
+	"display" :
+		{
+			"title" : "§5§L金之靈氣",
+			"description" : "攻略現代城Boss",
+			"frame" : "challenge",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:spruce_door"
+				}
+		},
+	"criteria" :
+		{
+			"clear_city" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/clear_city"
+		}
+}

@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/fishing/fish_100",
+	"display" :
+		{
+			"title" : "§5§L修身養性",
+			"description" : "釣魚 1000 次",
+			"frame" : "challenge",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:water_bucket"
+				}
+		},
+	"criteria" :
+		{
+			"fish_1000" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/fish_1000"
+		}
+}

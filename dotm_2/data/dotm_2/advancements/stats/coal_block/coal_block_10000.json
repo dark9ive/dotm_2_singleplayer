@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/coal_block/coal_block_1000",
+	"display" :
+		{
+			"title" : "§5§L研究神助手",
+			"description" : "挖掘煤炭磚 10000 次",
+			"frame" : "challenge",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:coal_block"
+				}
+		},
+	"criteria" :
+		{
+			"coal_block_10000" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/coal_block_10000"
+		}
+}

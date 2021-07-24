@@ -1,0 +1,48 @@
+{
+	"parent" : "dotm_2:main/select_job",
+	"display" :
+		{
+			"title" : "§a§L現代城",
+			"description" : "到達現代城",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:spruce_door"
+				}
+		},
+	"criteria":
+		{
+			"reach_city":
+				{
+					"trigger" : "minecraft:location",
+					"conditions" :
+						{
+							"position" :
+								{
+									"x" :
+										{
+											"min" : 278.0,
+											"max" : 284.0
+										},
+									"y" :
+										{
+											"min" : 108.0,
+											"max" : 111.0
+										},
+									"z" :
+										{
+											"min" : 209.0,
+											"max" : 213.0
+										}
+								}
+						}
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/reach_city"
+		}
+}

@@ -1,0 +1,166 @@
+{
+	"type": "minecraft:fishing",
+	"pools":
+		[
+			{
+				"rolls": 1,
+				"entries":
+					[
+						{
+							"type": "minecraft:loot_table",
+							"name": "minecraft:gameplay/fishing/fish"
+						}
+					]
+			},
+			{
+				"rolls": 1,
+				"entries":
+					[
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:cod",
+							"functions":
+								[
+									{
+										"function": "minecraft:set_nbt",
+                                        "tag":"{CustomModelData:1,display:{Name:'{\"text\":\"受汙染的生鱈魚\",\"color\":\"dark_gray\",\"bold\":\"true\"}',Lore:[\"\\\"\\\"\",\"\\\"§7看起來像受到毒藥影響的\\\"\",\"\\\"§7鱈魚\\\"\",\"\\\"\\\"\",\"\\\"\\\"\",\"\\\"§c§l取得方式 ： §7於現代城釣魚\\\"\"]}}"
+									}
+								]
+						}            
+					],
+				"conditions":
+                    [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate":
+								{
+									"position" :
+										{
+											"x" :
+												{
+													"min" : 90.0,
+                                                    "max" : 650.0
+                                                },
+                                            "z" :
+                                                {
+                                                    "min" : -240.0,
+                                                    "max" : 240.0
+                                                }
+										}
+                                }
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.4
+                        }
+                    ]
+			},
+			{
+				"rolls": 1.0,
+				"entries":
+					[
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:turtle_egg",
+							"functions":
+								[
+									{
+										"function": "minecraft:set_nbt",
+										"tag": "{display:{Name:'{\"text\":\"神秘的海龜蛋\",\"color\":\"dark_gray\",\"bold\":\"true\"}',Lore:[\"\\\"\\\"\",\"\\\"§7不知為何會在這出現的\\\"\",\"\\\"§7神秘海龜蛋\\\"\",\"\\\"\\\"\",\"\\\"\\\"\",\"\\\"§c§l取得方式 ： §7於特殊水池釣魚\\\"\"]}}"
+									}
+								]
+						}            
+					],
+				"conditions":
+					[
+						{
+							"condition": "minecraft:location_check",
+							"predicate":
+								{
+									"position" :
+										{
+											"x" :
+												{
+													"min" : 360.0,
+													"max" : 445.0
+												},
+											"z" :
+												{
+													"min" : 495.0,
+													"max" : 595.0
+												}
+										}
+								}
+						},
+						{
+							"condition": "minecraft:random_chance",
+							"chance": 0.003
+						}
+					]
+			},
+			{
+				"rolls": 1.0,
+				"entries":
+					[
+						{
+							"type": "minecraft:item",
+							"weight": 10,
+							"name": "minecraft:phantom_membrane",
+							"functions":
+								[
+									{
+										"function": "minecraft:set_nbt",
+										"tag": "{CustomModelData:65,HideFlags:63,display:{Name:'{\"text\":\"塑膠杯\",\"color\":\"dark_gray\",\"bold\":\"true\"}',Lore:[\"\\\"\\\"\",\"\\\"§7遭到人類隨意丟棄的杯子\\\"\",\"\\\"\\\"\",\"\\\"\\\"\",\"\\\"§c§l取得方式 ： §7於海底城釣魚\\\"\"]}}"
+									}
+								]
+						},
+						{
+							"type": "minecraft:item",
+							"weight": 10,
+							"name": "minecraft:phantom_membrane",
+							"functions":
+								[
+									{
+										"function": "minecraft:set_nbt",
+										"tag": "{CustomModelData:66,HideFlags:63,display:{Name:'{\"text\":\"塑膠瓶子\",\"color\":\"dark_gray\",\"bold\":\"true\"}',Lore:[\"\\\"\\\"\",\"\\\"§7遭到人類隨意丟棄的瓶子\\\"\",\"\\\"\\\"\",\"\\\"\\\"\",\"\\\"§c§l取得方式 ： §7於海底城釣魚\\\"\"]}}"
+									}
+								]
+						},
+						{
+							"type": "minecraft:item",
+							"weight": 10,
+							"name": "minecraft:phantom_membrane",
+							"functions":
+								[
+									{
+										"function": "minecraft:set_nbt",
+										"tag": "{CustomModelData:81,HideFlags:63,display:{Name:'{\"text\":\"海磚頭\",\"color\":\"dark_gray\",\"bold\":\"true\"}',Lore:[\"\\\"\\\"\",\"\\\"§7看起來很珍貴的磚頭，拿來\\\"\",\"\\\"§7當建築材料應該很適合\\\"\",\"\\\"\\\"\",\"\\\"\\\"\",\"\\\"§c§l取得方式 ： §7於海底城釣魚\\\"\"]}}"
+									}
+								]
+						}
+					],		
+				"conditions":
+					[
+						{
+							"condition": "minecraft:location_check",
+							"predicate":
+								{
+									"position" :
+										{
+											"x" :
+												{
+													"min" : 540.0,
+													"max" : 875.0
+												},
+											"z" :
+												{
+													"min" : 1730.0,
+													"max" : 1995.0
+												}
+										}
+								}
+						}
+					]
+			}
+		]
+}

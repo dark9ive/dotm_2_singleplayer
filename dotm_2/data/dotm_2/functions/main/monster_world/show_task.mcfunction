@@ -1,0 +1,1 @@
+tellraw @s [{"text":"敬請期待 !","bold":false,"color":"gray"}]

@@ -1,0 +1,68 @@
+{
+	"type": "minecraft:entity",
+	"pools":
+		[
+			{
+				"rolls": 1,
+				"entries":
+					[
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:phantom_membrane",
+							"functions":
+								[
+									{
+										"function": "minecraft:set_nbt",
+										"tag": "{CustomModelData:25,HideFlags:63,display:{Name:\"[{\\\"text\\\":\\\"幻術師卡\\\",\\\"color\\\":\\\"gold\\\",\\\"bold\\\":true,\\\"italic\\\":false}]\",Lore:[\"[{\\\"text\\\":\\\"★ ★ ★ ★ ★\\\",\\\"color\\\":\\\"yellow\\\",\\\"bold\\\":false,\\\"italic\\\":false}]\",\"[{\\\"text\\\":\\\"\\\"}]\",\"[{\\\"text\\\":\\\"從魔族身上掉下來的稀有卡片\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}]\",\"[{\\\"text\\\":\\\"，可以到\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false},{\\\"text\\\":\\\"鐵匠鋪B1\\\",\\\"color\\\":\\\"dark_green\\\",\\\"bold\\\":false,\\\"italic\\\":false},{\\\"text\\\":\\\"綁定或轉換成\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}]\",\"[{\\\"text\\\":\\\"星塵\\\",\\\"color\\\":\\\"red\\\",\\\"bold\\\":false,\\\"italic\\\":false},{\\\"text\\\":\\\"這項稀有的升級素材。\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}]\",\"[{\\\"text\\\":\\\"\\\"}]\",\"[{\\\"text\\\":\\\"\\\"}]\",\"[{\\\"text\\\":\\\"取得方式 : \\\",\\\"color\\\":\\\"red\\\",\\\"bold\\\":true,\\\"italic\\\":false},{\\\"text\\\":\\\"擊殺魔族\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}]\",\"[{\\\"text\\\":\\\"適用職業 : \\\",\\\"color\\\":\\\"red\\\",\\\"bold\\\":true,\\\"italic\\\":false},{\\\"text\\\":\\\"所有職業\\\",\\\"color\\\":\\\"gray\\\",\\\"bold\\\":false,\\\"italic\\\":false}]\"]},Enchantments:[{id:\"minecraft:fortune\",lvl:1}]}"
+									}
+								]
+          
+						}
+					],
+				"conditions":
+					[
+						{
+							"condition": "minecraft:killed_by_player"
+						},
+						{
+							"condition": "minecraft:random_chance",
+							"chance": 0.001
+						}
+					]
+			},
+			{
+				"rolls": 1,
+				"entries":
+					[
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:redstone_torch",
+							"functions":
+								[
+									{
+										"function": "minecraft:set_nbt",
+										"tag": "{Tags:[\"skill_12\"]}"
+									}
+								]
+						}
+					],
+				"conditions":
+					[
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "killer_player",
+							"predicate":
+								{
+									"equipment":
+										{
+											"mainhand":
+												{
+													"nbt":"{Parameter:[{\"name\":\"skill\",\"value\":12}]}"
+												}
+										}
+								}
+						}
+					]
+			}
+		]
+}

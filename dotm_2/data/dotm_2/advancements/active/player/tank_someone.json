@@ -1,0 +1,22 @@
+{
+ "display":{
+    "icon":{
+	         "item":"minecraft:apple"
+             },
+	"title":"你受傷了~",
+    "description":"",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":false,
+    "hidden":true,
+    "background":"minecraft:textures/block/stone.png"
+ },
+     "criteria": {
+            "kill": {
+            "trigger":"entity_hurt_player"
+            }
+    },
+    "rewards": {
+             "function":"dotm_2:main/other/tank_someone"
+    }
+}

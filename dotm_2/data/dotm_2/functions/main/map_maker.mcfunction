@@ -1,0 +1,8 @@
+tellraw @s [{"text":"\n\n\n- ↓ - ↓ - ↓ - 曾 經 參 與 地 圖 製 作 人 員 - ↓ - ↓ - ↓ -\n","bold":true,"color":"gold"}]
+tellraw @s [{"text":"【作者】","bold":true,"color":"red"},{"text":": 貘","bold":false,"color":"green"}]
+tellraw @s [{"text":"【指令】","bold":true,"color":"red"},{"text":": 貘、肉鬆","bold":false,"color":"green"}]
+tellraw @s [{"text":"【建築】","bold":true,"color":"red"},{"text":": 貘、肉鬆、奶昔、斑馬、西瓜、廢德、小宇、WeathEer","bold":false,"color":"green"}]
+tellraw @s [{"text":"           熙、謐灰、小咩、花花、喵姐","bold":false,"color":"green"}]
+tellraw @s [{"text":"【材質包繪製】","bold":true,"color":"red"},{"text":": 小咩、謐灰","bold":false,"color":"green"}]
+tellraw @s [{"text":"【地圖測試除錯】","bold":true,"color":"red"},{"text":": 參與公測的所有玩家","bold":false,"color":"green"}]
+tellraw @s [{"text":"\n- ↑ - ↑ - ↑ - 曾 經 參 與 地 圖 製 作 人 員 - ↑ - ↑ - ↑ -","bold":true,"color":"gold"}]

@@ -1,0 +1,28 @@
+{
+	"parent" : "dotm_2:stats/money/save_1000",
+	"display" :
+		{
+			"title" : "§a§L好野人",
+			"description" : "存款達到 10,000 元",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:phantom_membrane",
+					"nbt" : "{CustomModelData:41}"
+				}
+		},
+	"criteria" :
+		{
+			"save" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/save_10000"
+		}
+}

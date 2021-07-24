@@ -1,0 +1,3 @@
+function dotm_2:main/other/random
+execute if score #system random matches ..80 run summon zombie ~ ~3 ~ {Health:1f,AbsorptionAmount:360f,CustomNameVisible:1,CustomName:'[{"text":"","italic":false},{"text":"山賊","color":"green","bold":true}]',Attributes:[{Name:generic.max_health,Base:360f},{Name:generic.attack_damage,Base:4},{Name:generic.follow_range,Base:16},{Name:generic.knockback_resistance,Base:2.0f},{Name:generic.armor,Base:0},{Name:generic.armor_toughness,Base:0}],HandItems:[{Count:1,id:"flint_and_steel",tag:{}},{}],HandDropChances:[0f,0f],Tags:["mountain_thief"]}
+fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:dead_tube_coral_block replace minecraft:redstone_block

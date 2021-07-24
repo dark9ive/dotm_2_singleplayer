@@ -1,0 +1,27 @@
+{
+ "display":{
+    "icon":{
+	         "item":"minecraft:apple"
+             },
+	"title":"你要升階到影武了~",
+    "description":"",
+    "frame":"task",
+    "show_toast":false,
+    "announce_to_chat":false,
+    "hidden":true,
+    "background":"minecraft:textures/block/stone.png"
+ },
+     "criteria": {
+            "kill": {
+            "trigger":"minecraft:player_killed_entity",
+			"conditions": {
+                "entity": {
+                      "nbt" : "{Tags:[\"test_7\"]}"
+                    }
+                }
+            }
+    },
+    "rewards": {
+             "function":"dotm_2:task/main/test/combat_win_7"
+    }
+}

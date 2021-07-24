@@ -1,0 +1,28 @@
+{
+	"parent" : "dotm_2:monster_page/card_8",
+	"display" :
+		{
+			"title" : "§5§L凋零骷弓卡",
+			"description" : "",
+			"frame" : "task",
+			"show_toast" : false,
+			"announce_to_chat" : false,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:phantom_membrane",
+					"nbt" : "{CustomModelData:9}"
+				}
+		},
+	"criteria" :
+		{
+			"save" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/card/card_9"
+		}
+}

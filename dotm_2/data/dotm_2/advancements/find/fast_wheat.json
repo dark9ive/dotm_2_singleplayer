@@ -1,0 +1,49 @@
+{
+	"parent" : "dotm_2:main/select_job",
+	"display" :
+		{
+			"title" : "§e§L神秘商人",
+			"description" : "跑圖神器 : 光速稻草",
+			"frame" : "goal",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:phantom_membrane",
+					"nbt" : "{CustomModelData:67}"
+				}
+		},
+	"criteria" :
+		{
+			"fast_wheat" :
+				{
+					"trigger" : "minecraft:location",
+					"conditions" :
+						{
+							"position" :
+								{
+									"x" :
+										{
+											"min" : -253.0,
+											"max" : -242.0
+										},
+									"y" :
+										{
+											"min" : 224.0,
+											"max" : 228.0
+										},
+									"z" :
+										{
+											"min" : 301.0,
+											"max" : 308.0
+										}
+								}
+						}
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/fast_wheat"
+		}
+}

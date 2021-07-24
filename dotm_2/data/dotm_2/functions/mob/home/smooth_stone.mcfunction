@@ -1,0 +1,1 @@
+setblock ~ ~1 ~ minecraft:spawner{SpawnData:{id:"armor_stand",Tags:["smooth_stone"],Marker:1b,Invisible:1b},SpawnCount:2b,SpawnRange:5b,MaxNearbyEntities:3b,Delay:80b,MinSpawnDelay:80b,MaxSpawnDelay:100b,RequiredPlayerRange:12b} replace

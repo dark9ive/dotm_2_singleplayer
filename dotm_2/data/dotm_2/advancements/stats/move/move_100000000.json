@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/move/move_10000000",
+	"display" :
+		{
+			"title" : "§5§L旅行者",
+			"description" : "移動距離達到 100000000",
+			"frame" : "challenge",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:leather_boots"
+				}
+		},
+	"criteria" :
+		{
+			"save" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/move_100000000"
+		}
+}

@@ -1,0 +1,5 @@
+tag @s remove house_snow_106
+scoreboard players add @s money 50000
+fill 1615 118 2076 1616 118 2075 minecraft:air
+tellraw @a [{"selector":"@s","bold":true,"color":"red"},{"text":" 出售了 ","bold":true,"color":"gray"},{"text":"Snow 106","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"房屋位置 : 冰雪村\n","bold":true,"color":"green"},{"text":"售價 : $ 100000","bold":true,"color":"gold"}]}}}]
+setblock 1618 113 2089 minecraft:oak_wall_sign[facing=east]{Text1:"[{\"text\":\"\",\"color\":\"\",\"bold\":true}]",Text2:"[{\"text\":\"右鍵點擊我買房\",\"color\":\"gold\",\"bold\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute if entity @s[scores={money=..99999}] run function dotm_2:house/buy/fail\"}}]",Text3:"[{\"text\":\"售價 : $ 100000\",\"color\":\"red\",\"bold\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute if entity @s[scores={money=100000..}] run function dotm_2:house/buy/success/house_snow_106\"}}]",Text4:"[{\"text\":\"\",\"color\":\"\",\"bold\":true}]"} destroy

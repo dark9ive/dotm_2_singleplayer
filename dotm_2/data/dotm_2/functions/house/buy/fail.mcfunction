@@ -1,0 +1,1 @@
+tellraw @s [{"text":"存款餘額不足 ! 無法購買 !","bold":true,"color":"red"}]

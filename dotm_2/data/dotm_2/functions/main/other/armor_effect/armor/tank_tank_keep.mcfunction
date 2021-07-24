@@ -1,0 +1,2 @@
+
+execute as @a if data entity @s Inventory[{Slot:100b}].tag.Parameter[{"name":"skill","value":1009}] if data entity @s Inventory[{Slot:101b}].tag.Parameter[{"name":"skill","value":1009}] if data entity @s Inventory[{Slot:102b}].tag.Parameter[{"name":"skill","value":1009}] if data entity @s Inventory[{Slot:103b}].tag.Parameter[{"name":"skill","value":1009}] run function dotm_2:main/other/armor_effect/armor/tank_tank

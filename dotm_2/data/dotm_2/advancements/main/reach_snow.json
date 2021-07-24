@@ -1,0 +1,48 @@
+{
+	"parent" : "dotm_2:main/clear_underground",
+	"display" :
+		{
+			"title" : "§a§L冰雪村",
+			"description" : "到達冰雪村",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:ice"
+				}
+		},
+	"criteria":
+		{
+			"reach_snow":
+				{
+					"trigger" : "minecraft:location",
+					"conditions" :
+						{
+							"position" :
+								{
+									"x" :
+										{
+											"min" : 1470.0,
+											"max" : 1490.0
+										},
+									"y" :
+										{
+											"min" : 92.0,
+											"max" : 94.0
+										},
+									"z" :
+										{
+											"min" : 1955.0,
+											"max" : 1976.0
+										}
+								}
+						}
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/reach_snow"
+		}
+}

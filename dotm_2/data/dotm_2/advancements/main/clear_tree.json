@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:main/reach_tree",
+	"display" :
+		{
+			"title" : "§5§L木之靈氣",
+			"description" : "攻略神木村Boss",
+			"frame" : "challenge",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:oak_sapling"
+				}
+		},
+	"criteria" :
+		{
+			"clear_tree" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/clear_tree"
+		}
+}

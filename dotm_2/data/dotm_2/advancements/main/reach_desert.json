@@ -1,0 +1,48 @@
+{
+	"parent" : "dotm_2:main/clear_city",
+	"display" :
+		{
+			"title" : "§a§L烈沙村",
+			"description" : "到達烈沙村",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:sand"
+				}
+		},
+	"criteria":
+		{
+			"reach_desert":
+				{
+					"trigger" : "minecraft:location",
+					"conditions" :
+						{
+							"position" :
+								{
+									"x" :
+										{
+											"min" : 13.0,
+											"max" : 83.0
+										},
+									"y" :
+										{
+											"min" : 60.0,
+											"max" : 95.0
+										},
+									"z" :
+										{
+											"min" : 995.0,
+											"max" : 1083.0
+										}
+								}
+						}
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/reach_desert"
+		}
+}

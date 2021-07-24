@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/fight/death_100",
+	"display" :
+		{
+			"title" : "§5§L無藥可救",
+			"description" : "死亡 1000 次",
+			"frame" : "challenge",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:skeleton_skull"
+				}
+		},
+	"criteria" :
+		{
+			"death_1000" :
+				{
+					"trigger" : "minecraft:impossible"
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/death_1000"
+		}
+}

@@ -1,0 +1,3 @@
+function dotm_2:main/other/random
+execute if score #system random matches ..50 run summon minecraft:ravager ~ ~3 ~ {CustomName:'[{"text":"低階魔獸","color":"green","bold":true}]',CustomNameVisible:1,Health:1f,AbsorptionAmount:5400f,Attributes:[{Name:generic.max_health,Base:5400f},{Name:generic.attack_damage,Base:9},{Name:generic.movement_speed,Base:0.32f},{Name:generic.follow_range,Base:18},{Name:generic.knockback_resistance,Base:2.0f},{Name:generic.armor,Base:30},{Name:generic.armor_toughness,Base:20}],Tags:["warcraft_low"]}
+fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:dead_tube_coral_block replace minecraft:redstone_block

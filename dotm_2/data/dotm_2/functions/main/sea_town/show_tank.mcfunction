@@ -1,0 +1,3 @@
+execute as @a[tag=boss_fight_6,scores={sort=1}] run tellraw @a[tag=boss_fight_6] [{"selector":"@s","bold":true,"color":"red"},{"text":" → ","color":"gray","bold":false},{"score":{"name":"@s","objective":"boss_6_tank"},"color":"green","bold":false},{"text":"。\n","color":"gray","bold":false}]
+scoreboard players remove @a[tag=boss_fight_6,scores={sort=1..}] sort 1
+execute if entity @p[tag=boss_fight_6,scores={sort=1..}] run function dotm_2:main/sea_town/show_tank

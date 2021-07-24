@@ -1,0 +1,10 @@
+
+execute if entity @e[tag=npc_mill,distance=..2] if entity @s[scores={tmp_task=..6}] run scoreboard players add @s tmp_task 1
+execute if entity @e[tag=npc_mill,distance=..2] if entity @s[scores={tmp_task=1}] run tellraw @s [{"text":"神木研究員","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"冒險者你好，你能否能協助我們一件事情呢?\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_mill,distance=..2] if entity @s[scores={tmp_task=2}] run tellraw @s [{"text":"神木研究員","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"在神木的頂端上有者一隻兇殘的魔物，名字叫 ","bold":false,"color":"gray"},{"text":"千年妖精\n","bold":true,"color":"red"}]
+execute if entity @e[tag=npc_mill,distance=..2] if entity @s[scores={tmp_task=3}] run tellraw @s [{"text":"神木研究員","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"由於他極為兇殘且力量強大，封印他一段時間後封印仍然會被打破\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_mill,distance=..2] if entity @s[scores={tmp_task=4}] run tellraw @s [{"text":"神木研究員","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"但在封印他之後","bold":false,"color":"gray"},{"text":"有貢獻的冒險者","color":"red"},{"text":"會得到一個","bold":false,"color":"gray"},{"text":"千年妖精寶箱\n","color":"green"}]
+execute if entity @e[tag=npc_mill,distance=..2] if entity @s[scores={tmp_task=5}] run tellraw @s [{"text":"神木研究員","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"據說寶箱裡面有者吸收神木精華而形成的強大裝備\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_mill,distance=..2] if entity @s[scores={tmp_task=6}] run tellraw @s [{"text":"神木研究員","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"如果你能幫忙的話，只需要從旁邊這棵神木到頂後在走一小段路就能看到了\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_mill,distance=..2] if entity @s[scores={tmp_task=7}] run tellraw @s [{"text":"神木研究員","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"祝福你的旅途順利，冒險者\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_mill,distance=..2] if entity @s[scores={tmp_task=7}] run scoreboard players set @s tmp_task 0

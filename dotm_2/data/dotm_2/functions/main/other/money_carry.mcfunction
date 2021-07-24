@@ -1,0 +1,3 @@
+scoreboard players remove @s money 100000000
+scoreboard players add @s money_extra 1
+tellraw @s [{"text":"你目前銀行存款太多了，再這樣下去會塞爆銀行的，所以我們將你的一部份銀行存款移動到另一個金庫保存。\n不用擔心，當你存款變少時，我們會再把你的錢移回去的。\n(目前移動到金庫的金錢總額:$","color":"green","bold":false},{"score":{"name":"@s","objective":"money_extra"},"color":"gold","bold":false},{"text":"00000000","color":"gold","bold":false},{"text":"元。)","color":"green","bold":false}]

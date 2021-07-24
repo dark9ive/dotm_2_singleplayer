@@ -1,0 +1,5 @@
+tellraw @s [{"text":"\n\n\n\n\n\n\n\n\n\n\n\n《 地 下 城 任 務 列 表 》\n","bold":true,"color":"red"}]
+tellraw @s [{"text":"【每日】欲火奮戰","bold":true,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/tellraw @s {\"text\":\"點選功能尚待開發 !\",\"color\":\"gray\"}"}},{"text":" → 擊殺浴火戰士 25 隻。(","bold":false,"color":"gray"},{"text":"報酬權重 : 8","bold":false,"color":"yellow"},{"text":")","bold":false,"color":"gray"}]
+tellraw @s [{"text":"【每日】消滅哥布林","bold":true,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/tellraw @s {\"text\":\"點選功能尚待開發 !\",\"color\":\"gray\"}"}},{"text":" → 擊殺哥布林 25 隻。(","bold":false,"color":"gray"},{"text":"報酬權重 : 8","bold":false,"color":"yellow"},{"text":")","bold":false,"color":"gray"}]
+tellraw @s [{"text":"【每日】地底哥布林長老的逆襲","bold":true,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/tellraw @s {\"text\":\"點選功能尚待開發 !\",\"color\":\"gray\"}"}},{"text":" → 擊殺哥布林長老 3 隻。(","bold":false,"color":"gray"},{"text":"報酬權重 : 12","bold":false,"color":"yellow"},{"text":")","bold":false,"color":"gray"}]
+tellraw @s [{"text":"\n","bold":true,"color":"red"}]

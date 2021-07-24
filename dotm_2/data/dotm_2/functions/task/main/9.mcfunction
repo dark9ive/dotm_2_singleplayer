@@ -1,0 +1,8 @@
+
+execute if entity @e[tag=npc_weni,distance=..2] if score @s main_task matches 90000 run tellraw @s [{"selector":"@s","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"薇倪你好，大法師請我來找你。\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_weni,distance=..2] if score @s main_task matches 90001 run tellraw @s [{"text":"薇倪","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"你好啊，大法師有跟我通知你會過來。\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_weni,distance=..2] if score @s main_task matches 90002 run tellraw @s [{"text":"薇倪","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"根據我之前探勘獲得的情報，魔王目前正在魔界魔王城的最頂部。\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_weni,distance=..2] if score @s main_task matches 90003 run tellraw @s [{"text":"薇倪","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"魔界魔王城就在這條道路的盡頭，途中會有許多魔族。\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_weni,distance=..2] if score @s main_task matches 90004 run tellraw @s [{"text":"薇倪","bold":true,"color":"red"},{"text":":","bold":false,"color":"gray"},{"text":"就請你想辦法前往","bold":false,"color":"gray"},{"text":"魔界魔王城","bold":false,"color":"green"},{"text":"，並擊敗","bold":false,"color":"gray"},{"text":"魔王","bold":false,"color":"dark_purple"},{"text":"吧。\n","bold":false,"color":"gray"}]
+execute if entity @e[tag=npc_weni,distance=..2] if score @s main_task matches 90004..90099 run scoreboard players set @s main_task 90100
+execute if entity @e[tag=npc_weni,distance=..2] if score @s main_task matches 90000..90099 run scoreboard players add @s main_task 1

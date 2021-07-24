@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:find/secret",
+	"display" :
+		{
+			"title" : "§e§L一定是我進入的方式不對 !",
+			"description" : "正面突進魔王城",
+			"frame" : "goal",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:skeleton_skull"
+				}
+		},
+	"criteria" :
+		{
+			"wrong" :
+				{
+					"trigger" : "minecraft:impossible"
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/wrong"
+		}
+}

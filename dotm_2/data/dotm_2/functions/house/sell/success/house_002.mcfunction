@@ -1,0 +1,5 @@
+scoreboard players add @s money 4000
+tag @s remove house_002
+fill -132 183 249 -133 183 248 minecraft:air
+tellraw @a [{"selector":"@s","bold":true,"color":"red"},{"text":" 出售了 ","bold":true,"color":"gray"},{"text":"002 號房","color":"dark_purple","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"房屋位置 : 料峭北城\n","bold":true,"color":"green"},{"text":"售價 : $ 8000","bold":true,"color":"gold"}]}}}]
+setblock -124 183 254 minecraft:oak_wall_sign[facing=south]{Text1:"[{\"text\":\"\",\"color\":\"\",\"bold\":true}]",Text2:"[{\"text\":\"右鍵點擊我買房\",\"color\":\"gold\",\"bold\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute if entity @s[scores={money=..7999}] run function dotm_2:house/buy/fail\"}}]",Text3:"[{\"text\":\"售價 : $ 8000\",\"color\":\"red\",\"bold\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"execute if entity @s[scores={money=8000..}] run function dotm_2:house/buy/success/house_002\"}}]",Text4:"[{\"text\":\"\",\"color\":\"\",\"bold\":true}]"} destroy

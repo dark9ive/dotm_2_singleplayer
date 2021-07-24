@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:main/reach_boss",
+	"display" :
+		{
+			"title" : "§5§L驅逐魔族",
+			"description" : "攻略魔王城",
+			"frame" : "challenge",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:stone_bricks"
+				}
+		},
+	"criteria" :
+		{
+			"clear_boss" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/clear_boss"
+		}
+}

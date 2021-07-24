@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/fight/kill_10",
+	"display" :
+		{
+			"title" : "§a§L百人斬",
+			"description" : "擊殺 100 個魔族",
+			"frame" : "task",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:diamond_sword"
+				}
+		},
+	"criteria" :
+		{
+			"kill_100" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/kill_100"
+		}
+}

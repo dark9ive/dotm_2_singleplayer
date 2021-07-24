@@ -1,0 +1,27 @@
+{
+	"parent" : "dotm_2:stats/fight/kill_1000",
+	"display" :
+		{
+			"title" : "§5§L萬夫莫敵",
+			"description" : "擊殺 10000 個魔族",
+			"frame" : "challenge",
+			"show_toast" : true,
+			"announce_to_chat" : true,
+			"hidden" : false,
+			"icon" :
+				{
+					"item" : "minecraft:diamond_sword"
+				}
+		},
+	"criteria" :
+		{
+			"kill_10000" :
+				{
+					"trigger" : "minecraft:impossible"	
+				}
+		},
+	"rewards" :
+		{
+			"function" : "dotm_2:rewards/kill_10000"
+		}
+}

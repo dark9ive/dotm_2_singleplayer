@@ -1,0 +1,3 @@
+function dotm_2:main/other/random
+execute if score #system random matches ..25 run summon endermite ~ ~3 ~ {AbsorptionAmount:12800f,CustomNameVisible:1,CustomName:'[{"text":"","italic":false},{"text":"紫魔蛀蟲","color":"yellow","bold":true}]',Attributes:[{Name:generic.max_health,Base:12800f},{Name:generic.attack_damage,Base:12},{Name:generic.movement_speed,Base:0.24f},{Name:generic.follow_range,Base:16},{Name:generic.knockback_resistance,Base:2.0f},{Name:generic.armor,Base:0},{Name:generic.armor_toughness,Base:0}],Tags:["monster_aphids"]}
+fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:dead_tube_coral_block replace minecraft:redstone_block
