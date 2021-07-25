@@ -46,7 +46,7 @@ function dotm_2:main/other/random
 execute unless score #system mill_leprechaun matches 1 if score #system random matches ..2 run function dotm_2:main/tree_village/summon_mill_leprechaun
 execute unless score #system mill_leprechaun matches 1 if score #system money matches 1 run scoreboard objectives setdisplay sidebar money
 execute unless score #system mill_leprechaun matches 1 unless score #system money matches 1 run scoreboard objectives setdisplay sidebar
-execute if entity @a[x=1035,y=240,z=1320,dx=45,dy=36,dz=47] if entity @e[tag=mill_leprechaun] as @a[x=1035,y=240,z=1320,dx=45,dy=36,dz=47] at @s run summon minecraft:vindicator ~ ~2 ~ {CustomName:"[{\"text\":\"妖精\",\"color\":\"yellow\",\"bold\":true}]",CustomNameVisible:1,Health:1f,AbsorptionAmount:750f,Attributes:[{Name:generic.max_health,Base:750f},{Name:generic.attack_damage,Base:6},{Name:generic.follow_range,Base:32},{Name:generic.armor,Base:30}],Tags:["fairy"]}
+execute if entity @a[x=1035,y=240,z=1320,dx=45,dy=36,dz=47] if entity @e[tag=mill_leprechaun] as @a[x=1035,y=240,z=1320,dx=45,dy=36,dz=47] at @s run summon minecraft:vindicator ~ ~2 ~ {CustomName:"[{\"text\":\"妖精\",\"color\":\"yellow\",\"bold\":true}]",CustomNameVisible:1,Health:1f,AbsorptionAmount:75000f,Attributes:[{Name:generic.max_health,Base:75000f},{Name:generic.attack_damage,Base:20},{Name:generic.follow_range,Base:32},{Name:generic.armor,Base:30}],Tags:["fairy"]}
 scoreboard players add @a boss_1_time 1
 scoreboard players add @a boss_2_time 1
 scoreboard players add @a boss_3_time 1
